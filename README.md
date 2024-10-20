@@ -29,6 +29,8 @@ Open http://localhost:5173 in a browser.
 * Tanya Fox is now the selected person but the Combobox still displays "Arlene
   Mccoy". **"Tanya Fox" should be displayed instead.**
 
+![Screenshot](screenshot.png)
+
 If at this point you open the Combobox, it is updated correctly.
 
 The problem does not appear if you use the mouse to select the user in the
