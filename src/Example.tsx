@@ -1,4 +1,4 @@
-import {Combobox, ComboboxButton, ComboboxInput, ComboboxOption, ComboboxOptions} from '@headlessui/react'
+import {Button, Combobox, ComboboxButton, ComboboxInput, ComboboxOption, ComboboxOptions} from '@headlessui/react'
 import {CheckIcon, ChevronDownIcon} from '@heroicons/react/20/solid'
 import clsx from 'clsx'
 import {useState} from 'react'
@@ -59,6 +59,15 @@ export default function Example() {
                     ))}
                 </ComboboxOptions>
             </Combobox>
+            <div>
+                <Button
+                    className="text-white bg-blue-500 hover:bg-blue-700 px-4 py-2 rounded"
+                    onClick={() => setSelected(people[2])}
+                >
+                    Select Tanya
+                </Button>
+                <div><b>Selected:</b> {selected.name}</div>
+            </div>
         </div>
     )
 }
