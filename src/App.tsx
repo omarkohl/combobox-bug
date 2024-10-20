@@ -3,7 +3,7 @@ import Example from "./Example.tsx";
 
 function App() {
     return (
-        <div className="bg-black" style={{height: '400px'}}>
+        <div className="bg-gray-800" style={{height: '400px'}}>
             <div className="bg-white/5">
                 <Example/>
             </div>
