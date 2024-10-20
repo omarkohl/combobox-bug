@@ -23,11 +23,10 @@ export default function Example() {
             })
 
     return (
-        <div className="mx-auto pt-10 w-full flex justify-center items-center">
-            <div className="flex gap-8">
-                <div className="flex-grow">
-                    <Combobox value={selected} onChange={(value) => setSelected(value)} onClose={() => setQuery('')}
-                              __demoMode>
+        <div className="container mx-auto pt-10">
+            <div className="flex justify-center">
+                <div className="w-64 m-2 p-4">
+                    <Combobox value={selected} onChange={(value) => setSelected(value)} onClose={() => setQuery('')}>
                         <div className="relative">
                             <ComboboxInput
                                 className={clsx(
@@ -63,7 +62,7 @@ export default function Example() {
                         </ComboboxOptions>
                     </Combobox>
                 </div>
-                <div className="flex flex-col items-start">
+                <div className="w-64 m-2 p-4">
                     <Button
                         className="text-white bg-blue-500 hover:bg-blue-700 px-4 py-2 rounded mb-2"
                         onClick={() => setSelected(people[2])}
