@@ -3,10 +3,8 @@ import Example from "./Example.tsx";
 
 function App() {
     return (
-        <div className="bg-gray-800" style={{height: '400px'}}>
-            <div className="bg-white/5">
-                <Example/>
-            </div>
+        <div className="bg-gray-700" style={{height: '400px'}}>
+            <Example/>
         </div>
     )
 }
